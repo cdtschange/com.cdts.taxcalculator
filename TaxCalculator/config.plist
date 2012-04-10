@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IsFree</key>
+	<true/>
+	<key>Version</key>
+	<real>1.1</real>
+	<key>AppID</key>
+	<string>512194559</string>
+	<key>AppName</key>
+	<string>个税计算器</string>
+	<key>ADModelID</key>
+	<string>a14f68a2cf84f84</string>
+	<key>Subject</key>
+	<string>看看我们交了多少税</string>
+	<key>EmailBody</key>
+	<string>%@：挺实用，还可以看到公司实际为我们支付了多少费用，推荐你也了解下：%@</string>
+	<key>SMSBody</key>
+	<string>%@：挺实用，还可以看到公司实际为我们支付了多少费用，推荐你也了解下：%@</string>
+	<key>LinkUrl</key>
+	<string>http://itunes.apple.com/cn/app/id512194559?mt=8</string>
+	<key>DataBaseName</key>
+	<string>TaxCalculator.db</string>
+</dict>
+</plist>
