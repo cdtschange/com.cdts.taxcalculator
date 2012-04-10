@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEB9699F153439FA002B31E8 /* CdtsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9699E153439FA002B31E8 /* CdtsFramework.framework */; };
 		CEC948391525FE2500D94E67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC948381525FE2500D94E67 /* UIKit.framework */; };
 		CEC9483B1525FE2500D94E67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9483A1525FE2500D94E67 /* Foundation.framework */; };
 		CEC9483D1525FE2500D94E67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9483C1525FE2500D94E67 /* CoreGraphics.framework */; };
@@ -15,22 +16,220 @@
 		CEC948491525FE2500D94E67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948481525FE2500D94E67 /* AppDelegate.m */; };
 		CEC9484C1525FE2500D94E67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9484B1525FE2500D94E67 /* ViewController.m */; };
 		CEC9484F1525FE2500D94E67 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9484D1525FE2500D94E67 /* ViewController.xib */; };
+		CEC948601526007500D94E67 /* TaxService.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9485F1526007500D94E67 /* TaxService.m */; };
+		CEC948631526008D00D94E67 /* Tax.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948621526008D00D94E67 /* Tax.m */; };
+		CEC9486C152601CE00D94E67 /* TaxCity.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC94865152601CD00D94E67 /* TaxCity.m */; };
+		CEC9486D152601CE00D94E67 /* Taxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC94867152601CD00D94E67 /* Taxes.m */; };
+		CEC9486E152601CE00D94E67 /* TaxesDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC94869152601CD00D94E67 /* TaxesDetail.m */; };
+		CEC9486F152601CE00D94E67 /* TaxIncome.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9486B152601CE00D94E67 /* TaxIncome.m */; };
+		CEC9487A15260BA100D94E67 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9487915260BA100D94E67 /* libsqlite3.dylib */; };
+		CEC9487E15260F4B00D94E67 /* TaxCalculator.db in Resources */ = {isa = PBXBuildFile; fileRef = CEC9487D15260F4B00D94E67 /* TaxCalculator.db */; };
+		CEC9489215260F8C00D94E67 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488015260F8C00D94E67 /* bg.jpg */; };
+		CEC9489A15260F8C00D94E67 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488815260F8C00D94E67 /* Default.png */; };
+		CEC9489B15260F8C00D94E67 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488915260F8C00D94E67 /* Default@2x.png */; };
+		CEC9489C15260F8C00D94E67 /* section_row_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488A15260F8C00D94E67 /* section_row_bg.png */; };
+		CEC9489D15260F8C00D94E67 /* section_title_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488B15260F8C00D94E67 /* section_title_bg.png */; };
+		CEC9489E15260F8C00D94E67 /* section_title_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488C15260F8C00D94E67 /* section_title_bg2.png */; };
+		CEC9489F15260F8C00D94E67 /* section_title_bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488D15260F8C00D94E67 /* section_title_bg3.png */; };
+		CEC948A015260F8C00D94E67 /* toolbar_about.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488E15260F8C00D94E67 /* toolbar_about.png */; };
+		CEC948A115260F8C00D94E67 /* toolbar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9488F15260F8C00D94E67 /* toolbar_back.png */; };
+		CEC948A215260F8C00D94E67 /* toolbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9489015260F8C00D94E67 /* toolbar_bg.png */; };
+		CEC948AB1526102D00D94E67 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948A41526102D00D94E67 /* Icon-72.png */; };
+		CEC948AC1526102D00D94E67 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948A51526102D00D94E67 /* Icon-Small-50.png */; };
+		CEC948AD1526102D00D94E67 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948A61526102D00D94E67 /* Icon-Small.png */; };
+		CEC948AE1526102D00D94E67 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948A71526102D00D94E67 /* Icon-Small@2x.png */; };
+		CEC948AF1526102D00D94E67 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948A81526102D00D94E67 /* Icon.png */; };
+		CEC948B01526102D00D94E67 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948A91526102D00D94E67 /* Icon@2x.png */; };
+		CEC948B11526102D00D94E67 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC948AA1526102D00D94E67 /* iTunesArtwork.png */; };
+		CEC948BE152610DE00D94E67 /* CompensationTypeTaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948B3152610D300D94E67 /* CompensationTypeTaxes.m */; };
+		CEC948BF152610DE00D94E67 /* EnterpriseTypeTaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948B5152610D400D94E67 /* EnterpriseTypeTaxes.m */; };
+		CEC948C0152610DE00D94E67 /* MonthTypeTaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948B7152610D600D94E67 /* MonthTypeTaxes.m */; };
+		CEC948C1152610DE00D94E67 /* NormalTypeTaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948B9152610D800D94E67 /* NormalTypeTaxes.m */; };
+		CEC948C2152610DE00D94E67 /* PersonalTypeTaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948BB152610D900D94E67 /* PersonalTypeTaxes.m */; };
+		CEC948C3152610DE00D94E67 /* YearTypeTaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948BD152610DA00D94E67 /* YearTypeTaxes.m */; };
+		CEC948E1152611E600D94E67 /* CompensationTypeTaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948C5152611E600D94E67 /* CompensationTypeTaxManager.m */; };
+		CEC948E2152611E600D94E67 /* CompensationTypeTaxStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948C7152611E600D94E67 /* CompensationTypeTaxStrategy.m */; };
+		CEC948E3152611E600D94E67 /* EnterpriseTypeTaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948C9152611E600D94E67 /* EnterpriseTypeTaxManager.m */; };
+		CEC948E4152611E600D94E67 /* EnterpriseTypeTaxStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948CB152611E600D94E67 /* EnterpriseTypeTaxStrategy.m */; };
+		CEC948E5152611E600D94E67 /* MonthTypeTaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948CD152611E600D94E67 /* MonthTypeTaxManager.m */; };
+		CEC948E6152611E600D94E67 /* MonthTypeTaxStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948CF152611E600D94E67 /* MonthTypeTaxStrategy.m */; };
+		CEC948E7152611E600D94E67 /* NormalTypeTaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948D1152611E600D94E67 /* NormalTypeTaxManager.m */; };
+		CEC948E8152611E600D94E67 /* NormalTypeTaxStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948D3152611E600D94E67 /* NormalTypeTaxStrategy.m */; };
+		CEC948E9152611E600D94E67 /* PersonalTypeTaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948D5152611E600D94E67 /* PersonalTypeTaxManager.m */; };
+		CEC948EA152611E600D94E67 /* PersonalTypeTaxStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948D7152611E600D94E67 /* PersonalTypeTaxStrategy.m */; };
+		CEC948EB152611E600D94E67 /* TaxCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948D9152611E600D94E67 /* TaxCalculator.m */; };
+		CEC948EC152611E600D94E67 /* TaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948DB152611E600D94E67 /* TaxManager.m */; };
+		CEC948ED152611E600D94E67 /* YearTypeTaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948DE152611E600D94E67 /* YearTypeTaxManager.m */; };
+		CEC948EE152611E600D94E67 /* YearTypeTaxStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948E0152611E600D94E67 /* YearTypeTaxStrategy.m */; };
+		CEC948F21526145000D94E67 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC948F01526145000D94E67 /* RootViewController.m */; };
+		CEC948F31526145000D94E67 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC948F11526145000D94E67 /* RootViewController.xib */; };
+		CEC949331526EDA000D94E67 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC949321526ED9C00D94E67 /* MessageUI.framework */; };
+		CEC949351526EDBF00D94E67 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC949341526EDBC00D94E67 /* AudioToolbox.framework */; };
+		CEC9493B1526EDDE00D94E67 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9493A1526EDDB00D94E67 /* MediaPlayer.framework */; };
+		CEC9493D1526EDFC00D94E67 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9493C1526EDF900D94E67 /* SystemConfiguration.framework */; };
+		CEC949431526F5CD00D94E67 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC949421526F5CD00D94E67 /* config.plist */; };
+		CEC949471526F73C00D94E67 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC949451526F73B00D94E67 /* AboutViewController.m */; };
+		CEC949481526F73C00D94E67 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC949461526F73C00D94E67 /* AboutViewController.xib */; };
+		CEC9494C152703FB00D94E67 /* MonthPayTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9494A152703F800D94E67 /* MonthPayTypeController.m */; };
+		CEC9494D152703FB00D94E67 /* MonthPayTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9494B152703F900D94E67 /* MonthPayTypeController.xib */; };
+		CEC949561527044400D94E67 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC949541527043F00D94E67 /* DetailTableViewController.m */; };
+		CEC949571527044400D94E67 /* DetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC949551527044200D94E67 /* DetailTableViewController.xib */; };
+		CEC9495A1527050400D94E67 /* CommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC949591527050200D94E67 /* CommonUI.m */; };
+		CEC9495E1527526900D94E67 /* YearPayTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9495C1527526200D94E67 /* YearPayTypeController.m */; };
+		CEC9495F1527526900D94E67 /* YearPayTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9495D1527526600D94E67 /* YearPayTypeController.xib */; };
+		CEC94963152759B800D94E67 /* NormalTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC94961152759AF00D94E67 /* NormalTypeController.m */; };
+		CEC94964152759B800D94E67 /* NormalTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC94962152759B500D94E67 /* NormalTypeController.xib */; };
+		CEC9496815275E6200D94E67 /* CompensationTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9496615275E5B00D94E67 /* CompensationTypeController.m */; };
+		CEC9496915275E6200D94E67 /* CompensationTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9496715275E5F00D94E67 /* CompensationTypeController.xib */; };
+		CEC949721527622A00D94E67 /* PersonalTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC949701527622000D94E67 /* PersonalTypeController.m */; };
+		CEC949731527622A00D94E67 /* PersonalTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC949711527622400D94E67 /* PersonalTypeController.xib */; };
+		CEC949771527636100D94E67 /* EnterpriseTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC949751527635200D94E67 /* EnterpriseTypeController.m */; };
+		CEC949781527636100D94E67 /* EnterpriseTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC949761527635700D94E67 /* EnterpriseTypeController.xib */; };
+		CEC9497A1529516200D94E67 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC949791529515B00D94E67 /* QuartzCore.framework */; };
+		CEC9498115299B5B00D94E67 /* btn_city_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9497C15299B5100D94E67 /* btn_city_bg.png */; };
+		CEC9498215299B5B00D94E67 /* btn_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9497D15299B5300D94E67 /* btn_small.png */; };
+		CEC9498315299B5B00D94E67 /* content_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9497E15299B5600D94E67 /* content_bg1.png */; };
+		CEC9498415299B5B00D94E67 /* content_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9497F15299B5800D94E67 /* content_bg2.png */; };
+		CEC9498715299E4C00D94E67 /* btn_pick.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9498515299E1800D94E67 /* btn_pick.png */; };
+		CEC9498815299E4C00D94E67 /* content_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9498615299E2400D94E67 /* content_bg.png */; };
+		CEC949931529A36400D94E67 /* btn_big.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC949921529A36400D94E67 /* btn_big.png */; };
+		CEC949951529A6FE00D94E67 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC949941529A6FE00D94E67 /* line.png */; };
+		CEC949971529A87E00D94E67 /* content_bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC949961529A87E00D94E67 /* content_bg3.png */; };
+		CEC9499D1529D58100D94E67 /* Banner_320x50.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC9499C1529D58100D94E67 /* Banner_320x50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEC948341525FE2500D94E67 /* TaxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB9699E153439FA002B31E8 /* CdtsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CdtsFramework.framework; path = "../../../Library/Developer/Xcode/DerivedData/CdtsFramework-fwivomcsvevahugfyzissitzsaxn/Build/Products/Release-iphoneos/CdtsFramework.framework"; sourceTree = "<group>"; };
+		CEC948341525FE2500D94E67 /* 个税计算器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "个税计算器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC948381525FE2500D94E67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEC9483A1525FE2500D94E67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEC9483C1525FE2500D94E67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEC948401525FE2500D94E67 /* TaxCalculator-Info.plist */ = {isa = PBXFileReference; path = "TaxCalculator-Info.plist"; sourceTree = "<group>"; };
+		CEC948401525FE2500D94E67 /* TaxCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaxCalculator-Info.plist"; sourceTree = "<group>"; };
 		CEC948421525FE2500D94E67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEC948441525FE2500D94E67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEC948461525FE2500D94E67 /* TaxCalculator-Prefix.pch */ = {isa = PBXFileReference; path = "TaxCalculator-Prefix.pch"; sourceTree = "<group>"; };
-		CEC948471525FE2500D94E67 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEC948461525FE2500D94E67 /* TaxCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaxCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		CEC948471525FE2500D94E67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEC948481525FE2500D94E67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEC9484A1525FE2500D94E67 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		CEC9484A1525FE2500D94E67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CEC9484B1525FE2500D94E67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEC9484E1525FE2500D94E67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CEC9485E1526007500D94E67 /* TaxService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxService.h; sourceTree = "<group>"; };
+		CEC9485F1526007500D94E67 /* TaxService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxService.m; sourceTree = "<group>"; };
+		CEC948611526008D00D94E67 /* Tax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tax.h; sourceTree = "<group>"; };
+		CEC948621526008D00D94E67 /* Tax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tax.m; sourceTree = "<group>"; };
+		CEC94864152601CD00D94E67 /* TaxCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxCity.h; sourceTree = "<group>"; };
+		CEC94865152601CD00D94E67 /* TaxCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxCity.m; sourceTree = "<group>"; };
+		CEC94866152601CD00D94E67 /* Taxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Taxes.h; sourceTree = "<group>"; };
+		CEC94867152601CD00D94E67 /* Taxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taxes.m; sourceTree = "<group>"; };
+		CEC94868152601CD00D94E67 /* TaxesDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxesDetail.h; sourceTree = "<group>"; };
+		CEC94869152601CD00D94E67 /* TaxesDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxesDetail.m; sourceTree = "<group>"; };
+		CEC9486A152601CD00D94E67 /* TaxIncome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxIncome.h; sourceTree = "<group>"; };
+		CEC9486B152601CE00D94E67 /* TaxIncome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxIncome.m; sourceTree = "<group>"; };
+		CEC9487915260BA100D94E67 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CEC9487D15260F4B00D94E67 /* TaxCalculator.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = TaxCalculator.db; sourceTree = "<group>"; };
+		CEC9488015260F8C00D94E67 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		CEC9488815260F8C00D94E67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEC9488915260F8C00D94E67 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEC9488A15260F8C00D94E67 /* section_row_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_row_bg.png; sourceTree = "<group>"; };
+		CEC9488B15260F8C00D94E67 /* section_title_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_title_bg.png; sourceTree = "<group>"; };
+		CEC9488C15260F8C00D94E67 /* section_title_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_title_bg2.png; sourceTree = "<group>"; };
+		CEC9488D15260F8C00D94E67 /* section_title_bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_title_bg3.png; sourceTree = "<group>"; };
+		CEC9488E15260F8C00D94E67 /* toolbar_about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_about.png; sourceTree = "<group>"; };
+		CEC9488F15260F8C00D94E67 /* toolbar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_back.png; sourceTree = "<group>"; };
+		CEC9489015260F8C00D94E67 /* toolbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_bg.png; sourceTree = "<group>"; };
+		CEC948A41526102D00D94E67 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		CEC948A51526102D00D94E67 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		CEC948A61526102D00D94E67 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		CEC948A71526102D00D94E67 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		CEC948A81526102D00D94E67 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CEC948A91526102D00D94E67 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CEC948AA1526102D00D94E67 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		CEC948B2152610D200D94E67 /* CompensationTypeTaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompensationTypeTaxes.h; sourceTree = "<group>"; };
+		CEC948B3152610D300D94E67 /* CompensationTypeTaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompensationTypeTaxes.m; sourceTree = "<group>"; };
+		CEC948B4152610D300D94E67 /* EnterpriseTypeTaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseTypeTaxes.h; sourceTree = "<group>"; };
+		CEC948B5152610D400D94E67 /* EnterpriseTypeTaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseTypeTaxes.m; sourceTree = "<group>"; };
+		CEC948B6152610D500D94E67 /* MonthTypeTaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthTypeTaxes.h; sourceTree = "<group>"; };
+		CEC948B7152610D600D94E67 /* MonthTypeTaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthTypeTaxes.m; sourceTree = "<group>"; };
+		CEC948B8152610D600D94E67 /* NormalTypeTaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTypeTaxes.h; sourceTree = "<group>"; };
+		CEC948B9152610D800D94E67 /* NormalTypeTaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTypeTaxes.m; sourceTree = "<group>"; };
+		CEC948BA152610D900D94E67 /* PersonalTypeTaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTypeTaxes.h; sourceTree = "<group>"; };
+		CEC948BB152610D900D94E67 /* PersonalTypeTaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTypeTaxes.m; sourceTree = "<group>"; };
+		CEC948BC152610D900D94E67 /* YearTypeTaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearTypeTaxes.h; sourceTree = "<group>"; };
+		CEC948BD152610DA00D94E67 /* YearTypeTaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearTypeTaxes.m; sourceTree = "<group>"; };
+		CEC948C4152611E600D94E67 /* CompensationTypeTaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompensationTypeTaxManager.h; sourceTree = "<group>"; };
+		CEC948C5152611E600D94E67 /* CompensationTypeTaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompensationTypeTaxManager.m; sourceTree = "<group>"; };
+		CEC948C6152611E600D94E67 /* CompensationTypeTaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompensationTypeTaxStrategy.h; sourceTree = "<group>"; };
+		CEC948C7152611E600D94E67 /* CompensationTypeTaxStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompensationTypeTaxStrategy.m; sourceTree = "<group>"; };
+		CEC948C8152611E600D94E67 /* EnterpriseTypeTaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseTypeTaxManager.h; sourceTree = "<group>"; };
+		CEC948C9152611E600D94E67 /* EnterpriseTypeTaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseTypeTaxManager.m; sourceTree = "<group>"; };
+		CEC948CA152611E600D94E67 /* EnterpriseTypeTaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseTypeTaxStrategy.h; sourceTree = "<group>"; };
+		CEC948CB152611E600D94E67 /* EnterpriseTypeTaxStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseTypeTaxStrategy.m; sourceTree = "<group>"; };
+		CEC948CC152611E600D94E67 /* MonthTypeTaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthTypeTaxManager.h; sourceTree = "<group>"; };
+		CEC948CD152611E600D94E67 /* MonthTypeTaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthTypeTaxManager.m; sourceTree = "<group>"; };
+		CEC948CE152611E600D94E67 /* MonthTypeTaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthTypeTaxStrategy.h; sourceTree = "<group>"; };
+		CEC948CF152611E600D94E67 /* MonthTypeTaxStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthTypeTaxStrategy.m; sourceTree = "<group>"; };
+		CEC948D0152611E600D94E67 /* NormalTypeTaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTypeTaxManager.h; sourceTree = "<group>"; };
+		CEC948D1152611E600D94E67 /* NormalTypeTaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTypeTaxManager.m; sourceTree = "<group>"; };
+		CEC948D2152611E600D94E67 /* NormalTypeTaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTypeTaxStrategy.h; sourceTree = "<group>"; };
+		CEC948D3152611E600D94E67 /* NormalTypeTaxStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTypeTaxStrategy.m; sourceTree = "<group>"; };
+		CEC948D4152611E600D94E67 /* PersonalTypeTaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTypeTaxManager.h; sourceTree = "<group>"; };
+		CEC948D5152611E600D94E67 /* PersonalTypeTaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTypeTaxManager.m; sourceTree = "<group>"; };
+		CEC948D6152611E600D94E67 /* PersonalTypeTaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTypeTaxStrategy.h; sourceTree = "<group>"; };
+		CEC948D7152611E600D94E67 /* PersonalTypeTaxStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTypeTaxStrategy.m; sourceTree = "<group>"; };
+		CEC948D8152611E600D94E67 /* TaxCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxCalculator.h; sourceTree = "<group>"; };
+		CEC948D9152611E600D94E67 /* TaxCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxCalculator.m; sourceTree = "<group>"; };
+		CEC948DA152611E600D94E67 /* TaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxManager.h; sourceTree = "<group>"; };
+		CEC948DB152611E600D94E67 /* TaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxManager.m; sourceTree = "<group>"; };
+		CEC948DC152611E600D94E67 /* TaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxStrategy.h; sourceTree = "<group>"; };
+		CEC948DD152611E600D94E67 /* YearTypeTaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearTypeTaxManager.h; sourceTree = "<group>"; };
+		CEC948DE152611E600D94E67 /* YearTypeTaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearTypeTaxManager.m; sourceTree = "<group>"; };
+		CEC948DF152611E600D94E67 /* YearTypeTaxStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearTypeTaxStrategy.h; sourceTree = "<group>"; };
+		CEC948E0152611E600D94E67 /* YearTypeTaxStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearTypeTaxStrategy.m; sourceTree = "<group>"; };
+		CEC948EF1526145000D94E67 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CEC948F01526145000D94E67 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CEC948F11526145000D94E67 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		CEC949321526ED9C00D94E67 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CEC949341526EDBC00D94E67 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CEC9493A1526EDDB00D94E67 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CEC9493C1526EDF900D94E67 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CEC949421526F5CD00D94E67 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		CEC949441526F73B00D94E67 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		CEC949451526F73B00D94E67 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		CEC949461526F73C00D94E67 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		CEC94949152703F800D94E67 /* MonthPayTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthPayTypeController.h; sourceTree = "<group>"; };
+		CEC9494A152703F800D94E67 /* MonthPayTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthPayTypeController.m; sourceTree = "<group>"; };
+		CEC9494B152703F900D94E67 /* MonthPayTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthPayTypeController.xib; sourceTree = "<group>"; };
+		CEC949531527043E00D94E67 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		CEC949541527043F00D94E67 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		CEC949551527044200D94E67 /* DetailTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewController.xib; sourceTree = "<group>"; };
+		CEC949581527050000D94E67 /* CommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUI.h; sourceTree = "<group>"; };
+		CEC949591527050200D94E67 /* CommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUI.m; sourceTree = "<group>"; };
+		CEC9495B1527526000D94E67 /* YearPayTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearPayTypeController.h; sourceTree = "<group>"; };
+		CEC9495C1527526200D94E67 /* YearPayTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearPayTypeController.m; sourceTree = "<group>"; };
+		CEC9495D1527526600D94E67 /* YearPayTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearPayTypeController.xib; sourceTree = "<group>"; };
+		CEC94960152759AC00D94E67 /* NormalTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTypeController.h; sourceTree = "<group>"; };
+		CEC94961152759AF00D94E67 /* NormalTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTypeController.m; sourceTree = "<group>"; };
+		CEC94962152759B500D94E67 /* NormalTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalTypeController.xib; sourceTree = "<group>"; };
+		CEC9496515275E5700D94E67 /* CompensationTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompensationTypeController.h; sourceTree = "<group>"; };
+		CEC9496615275E5B00D94E67 /* CompensationTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompensationTypeController.m; sourceTree = "<group>"; };
+		CEC9496715275E5F00D94E67 /* CompensationTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompensationTypeController.xib; sourceTree = "<group>"; };
+		CEC9496F1527621A00D94E67 /* PersonalTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTypeController.h; sourceTree = "<group>"; };
+		CEC949701527622000D94E67 /* PersonalTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTypeController.m; sourceTree = "<group>"; };
+		CEC949711527622400D94E67 /* PersonalTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalTypeController.xib; sourceTree = "<group>"; };
+		CEC949741527634D00D94E67 /* EnterpriseTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseTypeController.h; sourceTree = "<group>"; };
+		CEC949751527635200D94E67 /* EnterpriseTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseTypeController.m; sourceTree = "<group>"; };
+		CEC949761527635700D94E67 /* EnterpriseTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterpriseTypeController.xib; sourceTree = "<group>"; };
+		CEC949791529515B00D94E67 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEC9497C15299B5100D94E67 /* btn_city_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_city_bg.png; sourceTree = "<group>"; };
+		CEC9497D15299B5300D94E67 /* btn_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_small.png; sourceTree = "<group>"; };
+		CEC9497E15299B5600D94E67 /* content_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_bg1.png; sourceTree = "<group>"; };
+		CEC9497F15299B5800D94E67 /* content_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_bg2.png; sourceTree = "<group>"; };
+		CEC9498515299E1800D94E67 /* btn_pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pick.png; sourceTree = "<group>"; };
+		CEC9498615299E2400D94E67 /* content_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_bg.png; sourceTree = "<group>"; };
+		CEC949921529A36400D94E67 /* btn_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_big.png; sourceTree = "<group>"; };
+		CEC949941529A6FE00D94E67 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		CEC949961529A87E00D94E67 /* content_bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_bg3.png; sourceTree = "<group>"; };
+		CEC9499C1529D58100D94E67 /* Banner_320x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banner_320x50.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +237,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB9699F153439FA002B31E8 /* CdtsFramework.framework in Frameworks */,
+				CEC9497A1529516200D94E67 /* QuartzCore.framework in Frameworks */,
+				CEC9493D1526EDFC00D94E67 /* SystemConfiguration.framework in Frameworks */,
+				CEC9493B1526EDDE00D94E67 /* MediaPlayer.framework in Frameworks */,
+				CEC949351526EDBF00D94E67 /* AudioToolbox.framework in Frameworks */,
+				CEC949331526EDA000D94E67 /* MessageUI.framework in Frameworks */,
+				CEC9487A15260BA100D94E67 /* libsqlite3.dylib in Frameworks */,
 				CEC948391525FE2500D94E67 /* UIKit.framework in Frameworks */,
 				CEC9483B1525FE2500D94E67 /* Foundation.framework in Frameworks */,
 				CEC9483D1525FE2500D94E67 /* CoreGraphics.framework in Frameworks */,
@@ -59,7 +265,7 @@
 		CEC948351525FE2500D94E67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC948341525FE2500D94E67 /* TaxCalculator.app */,
+				CEC948341525FE2500D94E67 /* 个税计算器.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +273,16 @@
 		CEC948371525FE2500D94E67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEB9699E153439FA002B31E8 /* CdtsFramework.framework */,
+				CEC949791529515B00D94E67 /* QuartzCore.framework */,
+				CEC9493C1526EDF900D94E67 /* SystemConfiguration.framework */,
+				CEC9493A1526EDDB00D94E67 /* MediaPlayer.framework */,
+				CEC949341526EDBC00D94E67 /* AudioToolbox.framework */,
+				CEC949321526ED9C00D94E67 /* MessageUI.framework */,
 				CEC948381525FE2500D94E67 /* UIKit.framework */,
 				CEC9483A1525FE2500D94E67 /* Foundation.framework */,
 				CEC9483C1525FE2500D94E67 /* CoreGraphics.framework */,
+				CEC9487915260BA100D94E67 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,12 +290,14 @@
 		CEC9483E1525FE2500D94E67 /* TaxCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				CEC948571525FE9000D94E67 /* Class */,
 				CEC948471525FE2500D94E67 /* AppDelegate.h */,
 				CEC948481525FE2500D94E67 /* AppDelegate.m */,
 				CEC9484A1525FE2500D94E67 /* ViewController.h */,
 				CEC9484B1525FE2500D94E67 /* ViewController.m */,
 				CEC9484D1525FE2500D94E67 /* ViewController.xib */,
 				CEC9483F1525FE2500D94E67 /* Supporting Files */,
+				CEC9485D1525FEE700D94E67 /* Resources */,
 			);
 			path = TaxCalculator;
 			sourceTree = "<group>";
@@ -94,8 +309,189 @@
 				CEC948411525FE2500D94E67 /* InfoPlist.strings */,
 				CEC948441525FE2500D94E67 /* main.m */,
 				CEC948461525FE2500D94E67 /* TaxCalculator-Prefix.pch */,
+				CEC949421526F5CD00D94E67 /* config.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC948571525FE9000D94E67 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9485C1525FEC000D94E67 /* Manager */,
+				CEC9485B1525FEB600D94E67 /* Service */,
+				CEC9485A1525FEAF00D94E67 /* Entity */,
+				CEC948581525FE9900D94E67 /* Controller */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		CEC948581525FE9900D94E67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEC949581527050000D94E67 /* CommonUI.h */,
+				CEC949591527050200D94E67 /* CommonUI.m */,
+				CEC948EF1526145000D94E67 /* RootViewController.h */,
+				CEC948F01526145000D94E67 /* RootViewController.m */,
+				CEC948F11526145000D94E67 /* RootViewController.xib */,
+				CEC949441526F73B00D94E67 /* AboutViewController.h */,
+				CEC949451526F73B00D94E67 /* AboutViewController.m */,
+				CEC949461526F73C00D94E67 /* AboutViewController.xib */,
+				CEC949531527043E00D94E67 /* DetailTableViewController.h */,
+				CEC949541527043F00D94E67 /* DetailTableViewController.m */,
+				CEC949551527044200D94E67 /* DetailTableViewController.xib */,
+				CEC94949152703F800D94E67 /* MonthPayTypeController.h */,
+				CEC9494A152703F800D94E67 /* MonthPayTypeController.m */,
+				CEC9494B152703F900D94E67 /* MonthPayTypeController.xib */,
+				CEC9495B1527526000D94E67 /* YearPayTypeController.h */,
+				CEC9495C1527526200D94E67 /* YearPayTypeController.m */,
+				CEC9495D1527526600D94E67 /* YearPayTypeController.xib */,
+				CEC94960152759AC00D94E67 /* NormalTypeController.h */,
+				CEC94961152759AF00D94E67 /* NormalTypeController.m */,
+				CEC94962152759B500D94E67 /* NormalTypeController.xib */,
+				CEC9496515275E5700D94E67 /* CompensationTypeController.h */,
+				CEC9496615275E5B00D94E67 /* CompensationTypeController.m */,
+				CEC9496715275E5F00D94E67 /* CompensationTypeController.xib */,
+				CEC9496F1527621A00D94E67 /* PersonalTypeController.h */,
+				CEC949701527622000D94E67 /* PersonalTypeController.m */,
+				CEC949711527622400D94E67 /* PersonalTypeController.xib */,
+				CEC949741527634D00D94E67 /* EnterpriseTypeController.h */,
+				CEC949751527635200D94E67 /* EnterpriseTypeController.m */,
+				CEC949761527635700D94E67 /* EnterpriseTypeController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CEC9485A1525FEAF00D94E67 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEC948611526008D00D94E67 /* Tax.h */,
+				CEC948621526008D00D94E67 /* Tax.m */,
+				CEC94864152601CD00D94E67 /* TaxCity.h */,
+				CEC94865152601CD00D94E67 /* TaxCity.m */,
+				CEC9486A152601CD00D94E67 /* TaxIncome.h */,
+				CEC9486B152601CE00D94E67 /* TaxIncome.m */,
+				CEC94866152601CD00D94E67 /* Taxes.h */,
+				CEC94867152601CD00D94E67 /* Taxes.m */,
+				CEC94868152601CD00D94E67 /* TaxesDetail.h */,
+				CEC94869152601CD00D94E67 /* TaxesDetail.m */,
+				CEC948B2152610D200D94E67 /* CompensationTypeTaxes.h */,
+				CEC948B3152610D300D94E67 /* CompensationTypeTaxes.m */,
+				CEC948B4152610D300D94E67 /* EnterpriseTypeTaxes.h */,
+				CEC948B5152610D400D94E67 /* EnterpriseTypeTaxes.m */,
+				CEC948B6152610D500D94E67 /* MonthTypeTaxes.h */,
+				CEC948B7152610D600D94E67 /* MonthTypeTaxes.m */,
+				CEC948B8152610D600D94E67 /* NormalTypeTaxes.h */,
+				CEC948B9152610D800D94E67 /* NormalTypeTaxes.m */,
+				CEC948BA152610D900D94E67 /* PersonalTypeTaxes.h */,
+				CEC948BB152610D900D94E67 /* PersonalTypeTaxes.m */,
+				CEC948BC152610D900D94E67 /* YearTypeTaxes.h */,
+				CEC948BD152610DA00D94E67 /* YearTypeTaxes.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		CEC9485B1525FEB600D94E67 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9485E1526007500D94E67 /* TaxService.h */,
+				CEC9485F1526007500D94E67 /* TaxService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		CEC9485C1525FEC000D94E67 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CEC948D8152611E600D94E67 /* TaxCalculator.h */,
+				CEC948D9152611E600D94E67 /* TaxCalculator.m */,
+				CEC948DC152611E600D94E67 /* TaxStrategy.h */,
+				CEC948DA152611E600D94E67 /* TaxManager.h */,
+				CEC948DB152611E600D94E67 /* TaxManager.m */,
+				CEC948C6152611E600D94E67 /* CompensationTypeTaxStrategy.h */,
+				CEC948C7152611E600D94E67 /* CompensationTypeTaxStrategy.m */,
+				CEC948CA152611E600D94E67 /* EnterpriseTypeTaxStrategy.h */,
+				CEC948CB152611E600D94E67 /* EnterpriseTypeTaxStrategy.m */,
+				CEC948CE152611E600D94E67 /* MonthTypeTaxStrategy.h */,
+				CEC948CF152611E600D94E67 /* MonthTypeTaxStrategy.m */,
+				CEC948D2152611E600D94E67 /* NormalTypeTaxStrategy.h */,
+				CEC948D3152611E600D94E67 /* NormalTypeTaxStrategy.m */,
+				CEC948D6152611E600D94E67 /* PersonalTypeTaxStrategy.h */,
+				CEC948D7152611E600D94E67 /* PersonalTypeTaxStrategy.m */,
+				CEC948DF152611E600D94E67 /* YearTypeTaxStrategy.h */,
+				CEC948E0152611E600D94E67 /* YearTypeTaxStrategy.m */,
+				CEC948C4152611E600D94E67 /* CompensationTypeTaxManager.h */,
+				CEC948C5152611E600D94E67 /* CompensationTypeTaxManager.m */,
+				CEC948C8152611E600D94E67 /* EnterpriseTypeTaxManager.h */,
+				CEC948C9152611E600D94E67 /* EnterpriseTypeTaxManager.m */,
+				CEC948CC152611E600D94E67 /* MonthTypeTaxManager.h */,
+				CEC948CD152611E600D94E67 /* MonthTypeTaxManager.m */,
+				CEC948D0152611E600D94E67 /* NormalTypeTaxManager.h */,
+				CEC948D1152611E600D94E67 /* NormalTypeTaxManager.m */,
+				CEC948D4152611E600D94E67 /* PersonalTypeTaxManager.h */,
+				CEC948D5152611E600D94E67 /* PersonalTypeTaxManager.m */,
+				CEC948DD152611E600D94E67 /* YearTypeTaxManager.h */,
+				CEC948DE152611E600D94E67 /* YearTypeTaxManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		CEC9485D1525FEE700D94E67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9487C15260F3500D94E67 /* Images */,
+				CEC9487B15260F2D00D94E67 /* DB */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CEC9487B15260F2D00D94E67 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9487D15260F4B00D94E67 /* TaxCalculator.db */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		CEC9487C15260F3500D94E67 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9499C1529D58100D94E67 /* Banner_320x50.png */,
+				CEC949941529A6FE00D94E67 /* line.png */,
+				CEC949921529A36400D94E67 /* btn_big.png */,
+				CEC9498515299E1800D94E67 /* btn_pick.png */,
+				CEC9497C15299B5100D94E67 /* btn_city_bg.png */,
+				CEC9497D15299B5300D94E67 /* btn_small.png */,
+				CEC9498615299E2400D94E67 /* content_bg.png */,
+				CEC9497E15299B5600D94E67 /* content_bg1.png */,
+				CEC9497F15299B5800D94E67 /* content_bg2.png */,
+				CEC949961529A87E00D94E67 /* content_bg3.png */,
+				CEC948A31526101200D94E67 /* AppIcon */,
+				CEC9488015260F8C00D94E67 /* bg.jpg */,
+				CEC9488815260F8C00D94E67 /* Default.png */,
+				CEC9488915260F8C00D94E67 /* Default@2x.png */,
+				CEC9488A15260F8C00D94E67 /* section_row_bg.png */,
+				CEC9488B15260F8C00D94E67 /* section_title_bg.png */,
+				CEC9488C15260F8C00D94E67 /* section_title_bg2.png */,
+				CEC9488D15260F8C00D94E67 /* section_title_bg3.png */,
+				CEC9488E15260F8C00D94E67 /* toolbar_about.png */,
+				CEC9488F15260F8C00D94E67 /* toolbar_back.png */,
+				CEC9489015260F8C00D94E67 /* toolbar_bg.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		CEC948A31526101200D94E67 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				CEC948A41526102D00D94E67 /* Icon-72.png */,
+				CEC948A51526102D00D94E67 /* Icon-Small-50.png */,
+				CEC948A61526102D00D94E67 /* Icon-Small.png */,
+				CEC948A71526102D00D94E67 /* Icon-Small@2x.png */,
+				CEC948A81526102D00D94E67 /* Icon.png */,
+				CEC948A91526102D00D94E67 /* Icon@2x.png */,
+				CEC948AA1526102D00D94E67 /* iTunesArtwork.png */,
+			);
+			name = AppIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +511,7 @@
 			);
 			name = TaxCalculator;
 			productName = TaxCalculator;
-			productReference = CEC948341525FE2500D94E67 /* TaxCalculator.app */;
+			productReference = CEC948341525FE2500D94E67 /* 个税计算器.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,6 +546,44 @@
 			files = (
 				CEC948431525FE2500D94E67 /* InfoPlist.strings in Resources */,
 				CEC9484F1525FE2500D94E67 /* ViewController.xib in Resources */,
+				CEC9487E15260F4B00D94E67 /* TaxCalculator.db in Resources */,
+				CEC9489215260F8C00D94E67 /* bg.jpg in Resources */,
+				CEC9489A15260F8C00D94E67 /* Default.png in Resources */,
+				CEC9489B15260F8C00D94E67 /* Default@2x.png in Resources */,
+				CEC9489C15260F8C00D94E67 /* section_row_bg.png in Resources */,
+				CEC9489D15260F8C00D94E67 /* section_title_bg.png in Resources */,
+				CEC9489E15260F8C00D94E67 /* section_title_bg2.png in Resources */,
+				CEC9489F15260F8C00D94E67 /* section_title_bg3.png in Resources */,
+				CEC948A015260F8C00D94E67 /* toolbar_about.png in Resources */,
+				CEC948A115260F8C00D94E67 /* toolbar_back.png in Resources */,
+				CEC948A215260F8C00D94E67 /* toolbar_bg.png in Resources */,
+				CEC948AB1526102D00D94E67 /* Icon-72.png in Resources */,
+				CEC948AC1526102D00D94E67 /* Icon-Small-50.png in Resources */,
+				CEC948AD1526102D00D94E67 /* Icon-Small.png in Resources */,
+				CEC948AE1526102D00D94E67 /* Icon-Small@2x.png in Resources */,
+				CEC948AF1526102D00D94E67 /* Icon.png in Resources */,
+				CEC948B01526102D00D94E67 /* Icon@2x.png in Resources */,
+				CEC948B11526102D00D94E67 /* iTunesArtwork.png in Resources */,
+				CEC948F31526145000D94E67 /* RootViewController.xib in Resources */,
+				CEC949431526F5CD00D94E67 /* config.plist in Resources */,
+				CEC949481526F73C00D94E67 /* AboutViewController.xib in Resources */,
+				CEC9494D152703FB00D94E67 /* MonthPayTypeController.xib in Resources */,
+				CEC949571527044400D94E67 /* DetailTableViewController.xib in Resources */,
+				CEC9495F1527526900D94E67 /* YearPayTypeController.xib in Resources */,
+				CEC94964152759B800D94E67 /* NormalTypeController.xib in Resources */,
+				CEC9496915275E6200D94E67 /* CompensationTypeController.xib in Resources */,
+				CEC949731527622A00D94E67 /* PersonalTypeController.xib in Resources */,
+				CEC949781527636100D94E67 /* EnterpriseTypeController.xib in Resources */,
+				CEC9498115299B5B00D94E67 /* btn_city_bg.png in Resources */,
+				CEC9498215299B5B00D94E67 /* btn_small.png in Resources */,
+				CEC9498315299B5B00D94E67 /* content_bg1.png in Resources */,
+				CEC9498415299B5B00D94E67 /* content_bg2.png in Resources */,
+				CEC9498715299E4C00D94E67 /* btn_pick.png in Resources */,
+				CEC9498815299E4C00D94E67 /* content_bg.png in Resources */,
+				CEC949931529A36400D94E67 /* btn_big.png in Resources */,
+				CEC949951529A6FE00D94E67 /* line.png in Resources */,
+				CEC949971529A87E00D94E67 /* content_bg3.png in Resources */,
+				CEC9499D1529D58100D94E67 /* Banner_320x50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +597,42 @@
 				CEC948451525FE2500D94E67 /* main.m in Sources */,
 				CEC948491525FE2500D94E67 /* AppDelegate.m in Sources */,
 				CEC9484C1525FE2500D94E67 /* ViewController.m in Sources */,
+				CEC948601526007500D94E67 /* TaxService.m in Sources */,
+				CEC948631526008D00D94E67 /* Tax.m in Sources */,
+				CEC9486C152601CE00D94E67 /* TaxCity.m in Sources */,
+				CEC9486D152601CE00D94E67 /* Taxes.m in Sources */,
+				CEC9486E152601CE00D94E67 /* TaxesDetail.m in Sources */,
+				CEC9486F152601CE00D94E67 /* TaxIncome.m in Sources */,
+				CEC948BE152610DE00D94E67 /* CompensationTypeTaxes.m in Sources */,
+				CEC948BF152610DE00D94E67 /* EnterpriseTypeTaxes.m in Sources */,
+				CEC948C0152610DE00D94E67 /* MonthTypeTaxes.m in Sources */,
+				CEC948C1152610DE00D94E67 /* NormalTypeTaxes.m in Sources */,
+				CEC948C2152610DE00D94E67 /* PersonalTypeTaxes.m in Sources */,
+				CEC948C3152610DE00D94E67 /* YearTypeTaxes.m in Sources */,
+				CEC948E1152611E600D94E67 /* CompensationTypeTaxManager.m in Sources */,
+				CEC948E2152611E600D94E67 /* CompensationTypeTaxStrategy.m in Sources */,
+				CEC948E3152611E600D94E67 /* EnterpriseTypeTaxManager.m in Sources */,
+				CEC948E4152611E600D94E67 /* EnterpriseTypeTaxStrategy.m in Sources */,
+				CEC948E5152611E600D94E67 /* MonthTypeTaxManager.m in Sources */,
+				CEC948E6152611E600D94E67 /* MonthTypeTaxStrategy.m in Sources */,
+				CEC948E7152611E600D94E67 /* NormalTypeTaxManager.m in Sources */,
+				CEC948E8152611E600D94E67 /* NormalTypeTaxStrategy.m in Sources */,
+				CEC948E9152611E600D94E67 /* PersonalTypeTaxManager.m in Sources */,
+				CEC948EA152611E600D94E67 /* PersonalTypeTaxStrategy.m in Sources */,
+				CEC948EB152611E600D94E67 /* TaxCalculator.m in Sources */,
+				CEC948EC152611E600D94E67 /* TaxManager.m in Sources */,
+				CEC948ED152611E600D94E67 /* YearTypeTaxManager.m in Sources */,
+				CEC948EE152611E600D94E67 /* YearTypeTaxStrategy.m in Sources */,
+				CEC948F21526145000D94E67 /* RootViewController.m in Sources */,
+				CEC949471526F73C00D94E67 /* AboutViewController.m in Sources */,
+				CEC9494C152703FB00D94E67 /* MonthPayTypeController.m in Sources */,
+				CEC949561527044400D94E67 /* DetailTableViewController.m in Sources */,
+				CEC9495A1527050400D94E67 /* CommonUI.m in Sources */,
+				CEC9495E1527526900D94E67 /* YearPayTypeController.m in Sources */,
+				CEC94963152759B800D94E67 /* NormalTypeController.m in Sources */,
+				CEC9496815275E6200D94E67 /* CompensationTypeController.m in Sources */,
+				CEC949721527622A00D94E67 /* PersonalTypeController.m in Sources */,
+				CEC949771527636100D94E67 /* EnterpriseTypeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +664,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mao Wei";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mao Wei";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -208,7 +679,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "75FFF65E-7D41-4269-8B7B-B6A8B2113ED2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75FFF65E-7D41-4269-8B7B-B6A8B2113ED2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -219,15 +692,18 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mao Wei";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mao Wei";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "75FFF65E-7D41-4269-8B7B-B6A8B2113ED2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75FFF65E-7D41-4269-8B7B-B6A8B2113ED2";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -236,10 +712,15 @@
 		CEC948531525FE2500D94E67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-cfuwmhjoyakjglasdemfniplmqxy/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-fwivomcsvevahugfyzissitzsaxn/Build/Products/Release-iphoneos\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TaxCalculator/TaxCalculator-Prefix.pch";
 				INFOPLIST_FILE = "TaxCalculator/TaxCalculator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "个税计算器";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -247,10 +728,15 @@
 		CEC948541525FE2500D94E67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-cfuwmhjoyakjglasdemfniplmqxy/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-fwivomcsvevahugfyzissitzsaxn/Build/Products/Release-iphoneos\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TaxCalculator/TaxCalculator-Prefix.pch";
 				INFOPLIST_FILE = "TaxCalculator/TaxCalculator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "个税计算器";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +760,7 @@
 				CEC948541525FE2500D94E67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
