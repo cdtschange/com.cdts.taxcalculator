@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEB9699F153439FA002B31E8 /* CdtsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9699E153439FA002B31E8 /* CdtsFramework.framework */; };
+		028E4E2B1568A41700736233 /* CdtsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E4E2A1568A41700736233 /* CdtsFramework.framework */; };
 		CEC948391525FE2500D94E67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC948381525FE2500D94E67 /* UIKit.framework */; };
 		CEC9483B1525FE2500D94E67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9483A1525FE2500D94E67 /* Foundation.framework */; };
 		CEC9483D1525FE2500D94E67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9483C1525FE2500D94E67 /* CoreGraphics.framework */; };
@@ -99,7 +99,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEB9699E153439FA002B31E8 /* CdtsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CdtsFramework.framework; path = "../../../Library/Developer/Xcode/DerivedData/CdtsFramework-fwivomcsvevahugfyzissitzsaxn/Build/Products/Release-iphoneos/CdtsFramework.framework"; sourceTree = "<group>"; };
+		028E4E2A1568A41700736233 /* CdtsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CdtsFramework.framework; path = "../../../Library/Developer/Xcode/DerivedData/CdtsFramework-girehplalroybparxsjppoyzxlsz/Build/Products/Debug-iphoneos/CdtsFramework.framework"; sourceTree = "<group>"; };
 		CEC948341525FE2500D94E67 /* 个税计算器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "个税计算器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC948381525FE2500D94E67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEC9483A1525FE2500D94E67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -237,7 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB9699F153439FA002B31E8 /* CdtsFramework.framework in Frameworks */,
+				028E4E2B1568A41700736233 /* CdtsFramework.framework in Frameworks */,
 				CEC9497A1529516200D94E67 /* QuartzCore.framework in Frameworks */,
 				CEC9493D1526EDFC00D94E67 /* SystemConfiguration.framework in Frameworks */,
 				CEC9493B1526EDDE00D94E67 /* MediaPlayer.framework in Frameworks */,
@@ -273,7 +273,7 @@
 		CEC948371525FE2500D94E67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEB9699E153439FA002B31E8 /* CdtsFramework.framework */,
+				028E4E2A1568A41700736233 /* CdtsFramework.framework */,
 				CEC949791529515B00D94E67 /* QuartzCore.framework */,
 				CEC9493C1526EDF900D94E67 /* SystemConfiguration.framework */,
 				CEC9493A1526EDDB00D94E67 /* MediaPlayer.framework */,
@@ -716,6 +716,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-cfuwmhjoyakjglasdemfniplmqxy/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-fwivomcsvevahugfyzissitzsaxn/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-girehplalroybparxsjppoyzxlsz/Build/Products/Debug-iphoneos\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TaxCalculator/TaxCalculator-Prefix.pch";
@@ -732,6 +733,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-cfuwmhjoyakjglasdemfniplmqxy/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-fwivomcsvevahugfyzissitzsaxn/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CdtsFramework-girehplalroybparxsjppoyzxlsz/Build/Products/Debug-iphoneos\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TaxCalculator/TaxCalculator-Prefix.pch";
